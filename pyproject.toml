@@ -9,3 +9,6 @@ dependencies = [
     "nonebot2>=2.4.4",
     "sketchbook-py>=0.2.1",
 ]
+
+[tool.setuptools]
+packages = ["nonebot_plugin_manosaba_memes"]
