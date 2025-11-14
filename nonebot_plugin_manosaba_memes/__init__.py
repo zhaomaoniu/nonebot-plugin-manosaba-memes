@@ -77,7 +77,9 @@ async def handle_anan_says(result: Arparma):
     face = result["face"]
     text = user_result.replace("\\n", "\n")
     image_bytes = draw_anan(text, face)
-    await anan_says_handler.finish(UniMessage.image(raw=image_bytes))
+    await anan_says_handler.finish(
+        UniMessage.image(raw=image_bytes, mimetype="image/png")
+    )
 
 
 @trail_handler.handle()
@@ -97,7 +99,9 @@ async def handle_trail(bot: Bot, event: Event):
         image_bytes = draw_trial(CHARACTER_MAP[event.get_user_id()], options)
     except OverflowError:
         await trail_handler.finish("选项过多，请减少选项数量")
-    await trail_handler.finish(await UniMessage.image(raw=image_bytes).export(bot))
+    await trail_handler.finish(
+        await UniMessage.image(raw=image_bytes, mimetype="image/png").export(bot)
+    )
 
 
 @switch_character_handler.handle()
