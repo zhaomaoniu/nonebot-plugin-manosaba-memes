@@ -100,5 +100,5 @@ _✨ [NoneBot2](https://github.com/nonebot/nonebot2) 魔法少女的魔女审判
 ## 致谢
 
 - 感谢 [TY_Ling](https://github.com/YoisakiKnd) 提出了写这个插件的想法（其实一开始是他开始写的不过被我抢过来了w）
-- 感谢 Mythos_404 编写了高效又好用的绘图库 [sketchbook-py](https://pypi.org/project/sketchbook-py/)
+- 感谢 [Mythos_404](https://github.com/Mythos-404) 编写了高效又好用的绘图库 [sketchbook-py](https://pypi.org/project/sketchbook-py/)
 - 感谢 Acacia 制作了魔法少女ノ魔女裁判，第一个能让我玩到凌晨四点的游戏
