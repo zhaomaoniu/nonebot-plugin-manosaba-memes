@@ -1,0 +1,11 @@
+[project]
+name = "nonebot-plugin-manosaba-memes"
+version = "0.1.0"
+description = "A NoneBot2 plugin for drawing Manosaba memes"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "nonebot-plugin-alconna>=0.60.3",
+    "nonebot2>=2.4.4",
+    "sketchbook-py>=0.2.1",
+]
