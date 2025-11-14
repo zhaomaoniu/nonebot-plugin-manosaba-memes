@@ -12,3 +12,6 @@ dependencies = [
 
 [tool.setuptools]
 packages = ["nonebot_plugin_manosaba_memes"]
+
+[tool.setuptools.package-data]
+nonebot_plugin_manosaba_memes = ["assets/**/*"]
