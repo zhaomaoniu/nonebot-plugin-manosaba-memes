@@ -20,7 +20,7 @@ _✨ [NoneBot2](https://github.com/nonebot/nonebot2) 魔法少女的魔女审判
 
 ## 介绍
 
-`nonebot-plugin-manosaba-memes` 是一个用于生成与游戏「魔法少女的魔法审判」相关的表情包的插件。还在开发中，有好的想法欢迎提 Issue 哦～
+`nonebot-plugin-manosaba-memes` 是一个用于生成与游戏「魔法少女的魔女审判」相关的表情包的插件。还在开发中，有好的想法欢迎提 Issue 哦～
 
 ## 功能
 
