@@ -1,4 +1,10 @@
-from enum import StrEnum
+from enum import Enum
+
+
+class StrEnum(str, Enum):
+    """String Enum base class"""
+
+    pass
 
 
 class Character(StrEnum):
