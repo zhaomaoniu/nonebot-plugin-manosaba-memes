@@ -68,6 +68,19 @@ def get_statement_image(statement: Statement) -> str:
         Statement.DOUBT: "doubt.png",
         Statement.PURJURY: "perjury.png",
         Statement.REFUTATION: "refutation.png",
+        Statement.MAGIC_CHIYUSAISEI: "magic_chiyusaisei.png",
+        Statement.MAGIC_EKITAISOUSA: "magic_ekitaisousa.png",
+        Statement.MAGIC_FUYUU: "magic_fuyuu.png",
+        Statement.MAGIC_GENSHI: "magic_genshi.png",
+        Statement.MAGIC_HAKKA: "magic_hakka.png",
+        Statement.MAGIC_IREKAWARI: "magic_irekawari.png",
+        Statement.MAGIC_KAIRIKI: "magic_kairiki.png",
+        Statement.MAGIC_MAJOGOROSHI: "magic_majogoroshi.png",
+        Statement.MAGIC_MONOMANE: "magic_monomane.png",
+        Statement.MAGIC_SENNOU: "magic_sennou.png",
+        Statement.MAGIC_SENRIGAN: "magic_senrigan.png",
+        Statement.MAGIC_SHINIMODORI: "magic_shinimodori.png",
+        Statement.MAGIC_SHISENYUUDOU: "magic_shisenyuudou.png",
     }
     return str(PLUGIN_PATH / f"assets/trial/{mapping[statement]}")
 
@@ -156,7 +169,7 @@ def draw_trial(character: Character, options: List[Option]):
             )
             .paste_image(
                 get_statement_image(option.statement),
-                region=DrawerRegion(x + 21, y - 41, x + 21 + 146, y - 41 + 126),
+                region=DrawerRegion(x + 21, y - 43, x + 21 + 146, y - 43 + 128),
                 style=PasteStyle(keep_alpha=False),
             )
         )

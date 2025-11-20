@@ -21,6 +21,19 @@ class Statement(StrEnum):
     DOUBT = "Doubt"
     PURJURY = "Perjury"
     REFUTATION = "Refutation"
+    MAGIC_CHIYUSAISEI = "Magic Chiyu & Saisei"
+    MAGIC_EKITAISOUSA = "Magic Ekitai Sousa"
+    MAGIC_FUYUU = "Magic Fuyuu"
+    MAGIC_GENSHI = "Magic Genshi"
+    MAGIC_HAKKA = "Magic Hakka"
+    MAGIC_IREKAWARI = "Magic Irekawari"
+    MAGIC_KAIRIKI = "Magic Kairiki"
+    MAGIC_MAJOGOROSHI = "Magic Majo Goroshi"
+    MAGIC_MONOMANE = "Magic Monomane"
+    MAGIC_SENNOU = "Magic Sennou"
+    MAGIC_SENRIGAN = "Magic Senrigan"
+    MAGIC_SHINIMODORI = "Magic Shini Modori"
+    MAGIC_SHISENYUUDOU = "Magic Shisen Yuudou"
 
 
 class Option:

@@ -27,8 +27,9 @@ usage = """
 切换角色 [角色名]
     角色名可选：艾玛, 希罗
 发送格式如下的消息以生成审判表情包：
-【疑问/反驳/伪证/赞同】这是一个选项文本
-可发送多行以添加多个选项
+【疑问/反驳/伪证/赞同/魔法:[角色名]】这是一个选项文本
+    角色名可选：梅露露, 诺亚, 汉娜, 奈叶香, 亚里沙, 米莉亚, 雪莉, 艾玛, 玛格, 安安, 可可, 希罗, 蕾雅
+    可发送多行以添加多个选项
 """.strip()
 
 __plugin_meta__ = PluginMetadata(
@@ -56,7 +57,9 @@ anan_says_handler = on_alconna(
     aliases={"anan说", "anansays"},
     use_cmd_start=True,
 )
-trail_handler = on_regex(r"^【(疑问|反驳|伪证|赞同)】(.+)$", flags=re.MULTILINE)
+trail_handler = on_regex(
+    r"^【(疑问|反驳|伪证|赞同|魔法)(?:[:：]([^】]*))?】(.+)$", flags=re.MULTILINE
+)
 switch_character_handler = on_alconna(
     Alconna(
         "切换角色",
@@ -85,14 +88,26 @@ async def handle_anan_says(result: Arparma):
 @trail_handler.handle()
 async def handle_trail(bot: Bot, event: Event):
     matches = re.findall(
-        r"^【(疑问|反驳|伪证|赞同)】(.+)$",
+        r"^【(疑问|反驳|伪证|赞同|魔法)(?:[:：]([^】]*))?】(.+)$",
         event.get_message().extract_plain_text(),
         flags=re.M,
     )
 
     options = []
-    for statement_type, text in matches:
-        statement_enum = get_statement(statement_type)
+    for statement_type, arg, text in matches:
+        try:
+            statement_enum = get_statement(statement_type, arg)
+        except KeyError:
+            if arg:
+                await trail_handler.finish(
+                    f"角色 {arg} 无效，请从以下选项中选择："
+                    "梅露露, 诺亚, 汉娜, 奈叶香, 亚里沙, 米莉亚, 雪莉, 艾玛, 玛格, 安安, 可可, 希罗, 蕾雅"
+                )
+            else:
+                await trail_handler.finish(
+                    "魔法类型无效，请输入【魔法:角色】格式。可选的角色有："
+                    "梅露露, 诺亚, 汉娜, 奈叶香, 亚里沙, 米莉亚, 雪莉, 艾玛, 玛格, 安安, 可可, 希罗, 蕾雅"
+                )
         options.append(Option(statement_enum, text))
 
     try:
