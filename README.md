@@ -53,7 +53,7 @@ _✨ [NoneBot2](https://github.com/nonebot/nonebot2) 魔法少女的魔女审判
 | 【伪证】我和艾玛不是恋人<br>【赞同】我们初中的时候就确认关系了 | 【疑问】汉娜和雪莉约会没有邀请我很可疑 |
 | ![trail_example1](./previews/trial01.png) | ![trail_example2](./previews/trial02.png) |
 | **示例 3** | **示例 4** |
-| 【魔法:诺亚】液体操控 | 【魔法:雪莉】【怪力】 |
+| 【魔法:诺亚】【液体操控】 | 【魔法:雪莉】【怪力】 |
 | ![trail_example3](./previews/trial03.png) | ![trail_example4](./previews/trial04.png) |
 
 **注意**:

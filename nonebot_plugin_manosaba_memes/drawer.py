@@ -3,11 +3,16 @@ from pathlib import Path
 from typing import Optional, List, Tuple
 
 from sketchbook import (
+    Layer,
+    Align,
+    VAlign,
     Drawer,
+    Region,
+    FontSet,
+    StyleMod,
     TextStyle,
-    PasteStyle,
-    DrawerRegion,
-    TextFitDrawer,
+    ParseRule,
+    ScaleMode,
 )
 
 from .models import Character, Option, Statement
@@ -41,17 +46,17 @@ def draw_anan(text: str, face: Optional[str] = None) -> bytes:
     Returns:
         bytes: The image bytes of the drawn image
     """
-    drawer = TextFitDrawer(
-        base_image=get_anan_base_image(face),
-        font=str(PLUGIN_PATH / "assets/fonts/SourceHanSansSC-Bold.otf"),
-        overlay_image=str(PLUGIN_PATH / "assets/anan/base_overlay.png"),
-        region=DrawerRegion(100, 432, 100 + 319, 432 + 204),
+    fonts = FontSet(str(PLUGIN_PATH / "assets/fonts/SourceHanSansSC-Bold.otf"))
+    drawer = Drawer.from_image(get_anan_base_image(face), fonts)
+    drawer.layer(
+        Layer("text").text(
+            text,
+            Region(100, 432, 319, 204),
+            TextStyle(color=(0, 0, 0, 255), align=Align.Center, valign=VAlign.Middle),
+        )
     )
-    image_bytes = drawer.draw(
-        text=text,
-        style=TextStyle(color=(0, 0, 0, 255)),
-    )
-    return image_bytes
+    drawer.overlay(str(PLUGIN_PATH / "assets/anan/base_overlay.png"))
+    return drawer.render()
 
 
 def get_statement_image(statement: Statement) -> str:
@@ -120,7 +125,7 @@ def get_option_coordinates(number: int) -> List[Tuple[int, int]]:
         ]
 
 
-def draw_trial(character: Character, options: List[Option]):
+def draw_trial(character: Character, options: List[Option]) -> bytes:
     """Draw the trial image for a character saying an option
 
     Args:
@@ -130,48 +135,64 @@ def draw_trial(character: Character, options: List[Option]):
     Returns:
         bytes: The image bytes of the drawn image
     """
-    # Bakcground and character
-    drawer = Drawer(
-        base_image=str(PLUGIN_PATH / "assets/trial/black.png"),
-        font=str(PLUGIN_PATH / "assets/fonts/SourceHanSerifSC.otf"),
-    )
-    drawer = drawer.paste_image(
-        str(PLUGIN_PATH / "assets/trial/background.png"),
-        region=DrawerRegion(0, 0, 1260, 1080),
-        style=PasteStyle(keep_alpha=False),
-    ).paste_image(
-        str(
-            PLUGIN_PATH
-            / "assets/trial"
-            / ("ema.png" if character == Character.EMA else "hiro.png")
-        ),
-        region=DrawerRegion(667, 0, 1260, 1080),
-        style=PasteStyle(keep_alpha=False),
+    fonts = FontSet(str(PLUGIN_PATH / "assets/fonts/SourceHanSerifSC.otf"))
+    drawer = Drawer.from_image(str(PLUGIN_PATH / "assets/trial/black.png"), fonts)
+    drawer.layer(
+        Layer("background").image_fit(
+            str(PLUGIN_PATH / "assets/trial/background.png"),
+            Region(0, 0, 1260, 1080),
+            scale=ScaleMode.Stretch,
+        )
     )
 
-    # Options, texts, and statements
+    character_image = "ema.png" if character == Character.EMA else "hiro.png"
+    drawer.layer(
+        Layer("character").image_fit(
+            str(PLUGIN_PATH / "assets/trial" / character_image),
+            Region(667, 0, 593, 1080),
+            scale=ScaleMode.Stretch,
+        )
+    )
+
     coordinates = get_option_coordinates(len(options))
-    for option, (x, y) in zip(options, coordinates):
-        drawer = (
-            drawer.paste_image(
+    for idx, (option, (x, y)) in enumerate(zip(options, coordinates)):
+        # Option background
+        drawer.layer(
+            Layer(f"option_bg_{idx}").image_fit(
                 str(PLUGIN_PATH / "assets/trial/option.png"),
-                region=DrawerRegion(x, y, x + 802, y + 216),
-                style=PasteStyle(keep_alpha=False),
-            )
-            .draw_text(
-                text=option.text,
-                region=DrawerRegion(x + 109, y + 32, x + 109 + 589, y + 32 + 150),
-                style=TextStyle(
-                    color=(39, 33, 30, 255),
-                    bracket_color=(39, 33, 30, 255),
-                    max_font_height=48,
-                ),
-            )
-            .paste_image(
-                get_statement_image(option.statement),
-                region=DrawerRegion(x + 21, y - 43, x + 21 + 146, y - 43 + 128),
-                style=PasteStyle(keep_alpha=False),
+                Region(x, y, 802, 216),
+                scale=ScaleMode.Stretch,
             )
         )
 
-    return drawer.finish()
+        # Option text
+        drawer.layer(
+            Layer(f"option_text_{idx}").text(
+                option.text,
+                Region(x + 109, y + 32, 589, 150),
+                TextStyle(
+                    color=(39, 33, 30, 255),
+                    max_font_size=32.0,
+                    parse_rules=[
+                        ParseRule(
+                            "【文本】",
+                            "【",
+                            "】",
+                            StyleMod.color(39, 33, 30, 255),
+                            keep_delim=True,
+                        )
+                    ],
+                ),
+            )
+        )
+
+        # Statement icon
+        drawer.layer(
+            Layer(f"statement_{idx}").image_fit(
+                get_statement_image(option.statement),
+                Region(x + 21, y - 43, 146, 128),
+                scale=ScaleMode.Stretch,
+            )
+        )
+
+    return drawer.render()

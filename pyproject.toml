@@ -7,7 +7,7 @@ requires-python = ">=3.10"
 dependencies = [
     "nonebot-plugin-alconna>=0.60.3",
     "nonebot2>=2.4.4",
-    "sketchbook-py>=0.2.1",
+    "sketchbook-py>=1.0.0",
 ]
 
 [tool.setuptools]
@@ -15,3 +15,8 @@ packages = ["nonebot_plugin_manosaba_memes"]
 
 [tool.setuptools.package-data]
 nonebot_plugin_manosaba_memes = ["assets/**/*"]
+
+[dependency-groups]
+dev = [
+    "pillow>=12.0.0",
+]
