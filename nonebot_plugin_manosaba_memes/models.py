@@ -4,14 +4,23 @@ from enum import Enum
 class StrEnum(str, Enum):
     """String Enum base class"""
 
-    pass
-
 
 class Character(StrEnum):
     """Characters available for trail drawing"""
 
+    MERURU = "Meruru"
+    NOAH = "Noah"
+    HANNA = "Hanna"
+    NANOKA = "Nanoka"
+    ALISA = "Alisa"
+    MIRIA = "Miria"
+    SHERRY = "Sherry"
     EMA = "Ema"
+    MARGO = "Margo"
+    ANAN = "AnAn"
+    COCO = "Coco"
     HIRO = "Hiro"
+    LEIA = "Leia"
 
 
 class Statement(StrEnum):

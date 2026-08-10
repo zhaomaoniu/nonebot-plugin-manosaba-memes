@@ -1,27 +1,30 @@
 import math
 from pathlib import Path
-from typing import Optional, List, Tuple
 
 from sketchbook import (
-    Layer,
     Align,
-    VAlign,
     Drawer,
-    Region,
     FontSet,
+    Layer,
+    ParseRule,
+    Region,
+    ScaleMode,
     StyleMod,
     TextStyle,
-    ParseRule,
-    ScaleMode,
+    VAlign,
 )
 
 from .models import Character, Option, Statement
-
+from .utils import get_png_size
 
 PLUGIN_PATH = Path(__file__).parent
+TRIAL_ASSET_PATH = PLUGIN_PATH / "assets/trial"
+TRIAL_CHARACTER_PATH = TRIAL_ASSET_PATH / "characters"
+TRIAL_STATEMENT_PATH = TRIAL_ASSET_PATH / "statements"
+TRIAL_UI_PATH = TRIAL_ASSET_PATH / "ui"
 
 
-def get_anan_base_image(face: Optional[str] = None) -> str:
+def get_anan_base_image(face: str | None = None) -> str:
     """Get the base image path for Anan's face
 
     Args:
@@ -36,7 +39,7 @@ def get_anan_base_image(face: Optional[str] = None) -> str:
         return str(PLUGIN_PATH / f"assets/anan/{face}.png")
 
 
-def draw_anan(text: str, face: Optional[str] = None) -> bytes:
+def draw_anan(text: str, face: str | None = None) -> bytes:
     """Draw the image of what Anan says
 
     Args:
@@ -87,10 +90,10 @@ def get_statement_image(statement: Statement) -> str:
         Statement.MAGIC_SHINIMODORI: "magic_shinimodori.png",
         Statement.MAGIC_SHISENYUUDOU: "magic_shisenyuudou.png",
     }
-    return str(PLUGIN_PATH / f"assets/trial/{mapping[statement]}")
+    return str(TRIAL_STATEMENT_PATH / mapping[statement])
 
 
-def get_option_coordinates(number: int) -> List[Tuple[int, int]]:
+def get_option_coordinates(number: int) -> list[tuple[int, int]]:
     """Get the coordinates for drawing options based on the number of options
 
     Args:
@@ -125,7 +128,7 @@ def get_option_coordinates(number: int) -> List[Tuple[int, int]]:
         ]
 
 
-def draw_trial(character: Character, options: List[Option]) -> bytes:
+def draw_trial(character: Character, options: list[Option]) -> bytes:
     """Draw the trial image for a character saying an option
 
     Args:
@@ -136,20 +139,21 @@ def draw_trial(character: Character, options: List[Option]) -> bytes:
         bytes: The image bytes of the drawn image
     """
     fonts = FontSet(str(PLUGIN_PATH / "assets/fonts/SourceHanSerifSC.otf"))
-    drawer = Drawer.from_image(str(PLUGIN_PATH / "assets/trial/black.png"), fonts)
+    drawer = Drawer.from_image(str(TRIAL_UI_PATH / "black.png"), fonts)
     drawer.layer(
         Layer("background").image_fit(
-            str(PLUGIN_PATH / "assets/trial/background.png"),
+            str(TRIAL_UI_PATH / "background.png"),
             Region(0, 0, 1260, 1080),
             scale=ScaleMode.Stretch,
         )
     )
 
-    character_image = "ema.png" if character == Character.EMA else "hiro.png"
+    character_image = TRIAL_CHARACTER_PATH / f"{character.value.lower()}.png"
+    character_width, character_height = get_png_size(character_image)
     drawer.layer(
         Layer("character").image_fit(
-            str(PLUGIN_PATH / "assets/trial" / character_image),
-            Region(667, 0, 593, 1080),
+            str(character_image),
+            Region(1260 - character_width, 0, character_width, character_height),
             scale=ScaleMode.Stretch,
         )
     )
@@ -159,7 +163,7 @@ def draw_trial(character: Character, options: List[Option]) -> bytes:
         # Option background
         drawer.layer(
             Layer(f"option_bg_{idx}").image_fit(
-                str(PLUGIN_PATH / "assets/trial/option.png"),
+                str(TRIAL_UI_PATH / "option.png"),
                 Region(x, y, 802, 216),
                 scale=ScaleMode.Stretch,
             )

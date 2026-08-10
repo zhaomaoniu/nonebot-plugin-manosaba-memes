@@ -1,6 +1,31 @@
-from typing import Optional
+import struct
+from pathlib import Path
 
-from .models import Statement, Character
+from .models import Character, Statement
+
+CHARACTER_NAME_MAP = {
+    "梅露露": Character.MERURU,
+    "诺亚": Character.NOAH,
+    "汉娜": Character.HANNA,
+    "奈叶香": Character.NANOKA,
+    "亚里沙": Character.ALISA,
+    "米莉亚": Character.MIRIA,
+    "雪莉": Character.SHERRY,
+    "艾玛": Character.EMA,
+    "玛格": Character.MARGO,
+    "安安": Character.ANAN,
+    "可可": Character.COCO,
+    "希罗": Character.HIRO,
+    "蕾雅": Character.LEIA,
+}
+CHARACTER_NAMES = tuple(CHARACTER_NAME_MAP)
+
+
+def get_png_size(file_path: Path) -> tuple[int, int]:
+    """Read a PNG image's width and height from its IHDR chunk."""
+    with file_path.open("rb") as file:
+        file.seek(16)
+        return struct.unpack(">II", file.read(8))
 
 
 def get_magic_statement(text: str) -> Statement:
@@ -30,7 +55,7 @@ def get_magic_statement(text: str) -> Statement:
     return mapping[text]
 
 
-def get_statement(statement: str, arg: Optional[str] = None) -> Statement:
+def get_statement(statement: str, arg: str | None = None) -> Statement:
     """Convert a string statement type to a Statement enum
 
     Args:
@@ -64,8 +89,4 @@ def get_character(character: str) -> Character:
     Returns:
         Character: The corresponding Character enum
     """
-    mapping = {
-        "艾玛": Character.EMA,
-        "希罗": Character.HIRO,
-    }
-    return mapping[character]
+    return CHARACTER_NAME_MAP[character]

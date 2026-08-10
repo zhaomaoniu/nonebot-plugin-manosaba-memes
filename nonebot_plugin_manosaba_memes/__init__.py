@@ -1,34 +1,35 @@
 import re
 from collections import defaultdict
 
-from nonebot import require, on_regex
+from nonebot import on_regex, require
 from nonebot.internal.adapter import Bot, Event
 from nonebot.plugin import PluginMetadata, inherit_supported_adapters
 
 require("nonebot_plugin_alconna")
 
-from nonebot_plugin_alconna import (  # noqa: E402
-    Args,
+from nonebot_plugin_alconna import (
     Alconna,
+    Args,
     Arparma,
-    on_alconna,
-    UniMessage,
     CommandMeta,
+    UniMessage,
+    on_alconna,
 )
 
-from .models import Option  # noqa: E402
-from .drawer import draw_anan, draw_trial  # noqa: E402
-from .utils import get_statement, get_character  # noqa: E402
+from .drawer import draw_anan, draw_trial
+from .models import Option
+from .utils import CHARACTER_NAMES, get_character, get_statement
 
+CHARACTER_NAMES_TEXT = ", ".join(CHARACTER_NAMES)
 
-usage = """
+usage = f"""
 安安说 [文本] [表情]
     表情可选：害羞, 生气, 病娇, 无语, 开心
 切换角色 [角色名]
-    角色名可选：艾玛, 希罗
+    角色名可选：{CHARACTER_NAMES_TEXT}
 发送格式如下的消息以生成审判表情包：
 【疑问/反驳/伪证/赞同/魔法:[角色名]】这是一个选项文本
-    角色名可选：梅露露, 诺亚, 汉娜, 奈叶香, 亚里沙, 米莉亚, 雪莉, 艾玛, 玛格, 安安, 可可, 希罗, 蕾雅
+    角色名可选：{CHARACTER_NAMES_TEXT}
     可发送多行以添加多个选项
 """.strip()
 
@@ -66,7 +67,7 @@ switch_character_handler = on_alconna(
         Args["character", str],
         meta=CommandMeta(
             description="切换审判选择中的角色",
-            usage="切换角色 [角色名]\n角色名可选：艾玛, 希罗",
+            usage=f"切换角色 [角色名]\n角色名可选：{CHARACTER_NAMES_TEXT}",
             example="切换角色 希罗",
         ),
     ),
@@ -90,7 +91,7 @@ async def handle_trail(bot: Bot, event: Event):
     matches = re.findall(
         r"^【(疑问|反驳|伪证|赞同|魔法)(?:[:：]([^】]*))?】(.+)$",
         event.get_message().extract_plain_text(),
-        flags=re.M,
+        flags=re.MULTILINE,
     )
 
     options = []
@@ -101,12 +102,12 @@ async def handle_trail(bot: Bot, event: Event):
             if arg:
                 await trail_handler.finish(
                     f"角色 {arg} 无效，请从以下选项中选择："
-                    "梅露露, 诺亚, 汉娜, 奈叶香, 亚里沙, 米莉亚, 雪莉, 艾玛, 玛格, 安安, 可可, 希罗, 蕾雅"
+                    f"{CHARACTER_NAMES_TEXT}"
                 )
             else:
                 await trail_handler.finish(
                     "魔法类型无效，请输入【魔法:角色】格式。可选的角色有："
-                    "梅露露, 诺亚, 汉娜, 奈叶香, 亚里沙, 米莉亚, 雪莉, 艾玛, 玛格, 安安, 可可, 希罗, 蕾雅"
+                    f"{CHARACTER_NAMES_TEXT}"
                 )
         options.append(Option(statement_enum, text))
 
@@ -121,12 +122,11 @@ async def handle_trail(bot: Bot, event: Event):
 
 @switch_character_handler.handle()
 async def handle_switch_character(evemt: Event, result: Arparma):
-    global CHARACTER_MAP
     character_name = result["character"]
     try:
         CHARACTER_MAP[evemt.get_user_id()] = get_character(character_name)
         await switch_character_handler.finish(f"已切换角色为 {character_name}")
     except KeyError:
         await switch_character_handler.finish(
-            f"角色名 {character_name} 无效，请选择 艾玛 或 希罗"
+            f"角色名 {character_name} 无效，请选择：{CHARACTER_NAMES_TEXT}"
         )

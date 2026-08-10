@@ -18,5 +18,6 @@ nonebot_plugin_manosaba_memes = ["assets/**/*"]
 
 [dependency-groups]
 dev = [
+    "numpy>=2.2.6",
     "pillow>=12.0.0",
 ]
