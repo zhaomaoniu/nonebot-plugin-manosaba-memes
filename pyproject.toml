@@ -6,18 +6,18 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "nonebot-plugin-alconna>=0.60.3",
+    "nonebot-plugin-localstore>=0.7.4",
     "nonebot2>=2.4.4",
-    "sketchbook-py>=1.0.0",
+    "sketchbook-py>=1.2.1",
 ]
 
-[tool.setuptools]
-packages = ["nonebot_plugin_manosaba_memes"]
+[tool.setuptools.packages.find]
+include = ["nonebot_plugin_manosaba_memes*"]
 
 [tool.setuptools.package-data]
-nonebot_plugin_manosaba_memes = ["assets/**/*"]
-
-[dependency-groups]
-dev = [
-    "numpy>=2.2.6",
-    "pillow>=12.0.0",
+nonebot_plugin_manosaba_memes = [
+    "assets/anan/*.png",
+    "assets/fonts/*",
+    "assets/presets/*.json",
+    "assets/trial/**/*.png",
 ]

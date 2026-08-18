@@ -1,0 +1,2259 @@
+{
+  "character": "AnAn",
+  "nodes": [
+    {
+      "name": "AnAn",
+      "children": [
+        1,
+        116,
+        117
+      ]
+    },
+    {
+      "name": "Angle01",
+      "children": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        19,
+        22,
+        30,
+        40,
+        52,
+        98,
+        101,
+        107,
+        115
+      ],
+      "translation": [
+        -0.18000000715255737,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        0.6000000238418579,
+        0.6000000238418579,
+        1.0
+      ]
+    },
+    {
+      "name": "ClippingMask_Root_Overlay",
+      "translation": [
+        -1.8099994659423828,
+        4.465000152587891,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "overlay",
+        "stencil_write": null,
+        "stencil_read": 1,
+        "cutoff": 0.0,
+        "color": [
+          0.7529411911964417,
+          0.7529411911964417,
+          0.7529411911964417,
+          0.007843137718737125
+        ],
+        "enabled": true
+      }
+    },
+    {
+      "name": "ClippingMask_Root_Softlight01",
+      "translation": [
+        -6.430000305175781,
+        6.674999237060547,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "soft_light",
+        "stencil_write": null,
+        "stencil_read": 1,
+        "cutoff": 0.0,
+        "color": [
+          0.7529411911964417,
+          0.7529411911964417,
+          0.7529411911964417,
+          0.007843137718737125
+        ],
+        "enabled": true
+      }
+    },
+    {
+      "name": "ClippingMask_Root_Softlight02",
+      "translation": [
+        -0.04500007629394531,
+        8.944999694824219,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "soft_light",
+        "stencil_write": null,
+        "stencil_read": 1,
+        "cutoff": 0.0,
+        "color": [
+          0.7529411911964417,
+          0.7529411911964417,
+          0.7529411911964417,
+          0.01568627543747425
+        ],
+        "enabled": true
+      }
+    },
+    {
+      "name": "ClippingMask_Root_Multiply",
+      "translation": [
+        -0.0,
+        -13.21500015258789,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "multiply",
+        "stencil_write": null,
+        "stencil_read": 1,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          0.3764705955982208
+        ],
+        "enabled": true
+      }
+    },
+    {
+      "name": "Option_Arms",
+      "children": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "name": "Option_Arms01_01",
+      "translation": [
+        0.020000457763671875,
+        6.834999084472656,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": null,
+        "stencil_read": null,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Option_Arms01_02",
+      "translation": [
+        0.015000343322753906,
+        6.904998779296875,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": null,
+        "stencil_read": null,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Option_Arms01_03",
+      "translation": [
+        0.04500007629394531,
+        6.760000228881836,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": null,
+        "stencil_read": null,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Option_Arms01_04",
+      "translation": [
+        0.010000228881835938,
+        6.934999465942383,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": null,
+        "stencil_read": null,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Option_Arms01_05",
+      "translation": [
+        -0.04500007629394531,
+        6.815000534057617,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": null,
+        "stencil_read": null,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Option_Arms01_06",
+      "translation": [
+        0.025000572204589844,
+        6.885000228881836,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": null,
+        "stencil_read": null,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Option_Arms02_01",
+      "translation": [
+        0.21000003814697266,
+        6.760000228881836,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": null,
+        "stencil_read": null,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Option_Arms02_02",
+      "translation": [
+        0.2049999237060547,
+        6.869998931884766,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": null,
+        "stencil_read": null,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Option_Arms02_03",
+      "translation": [
+        0.25,
+        6.6399993896484375,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": null,
+        "stencil_read": null,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Option_Arms02_04",
+      "translation": [
+        0.19999980926513672,
+        6.909999847412109,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": null,
+        "stencil_read": null,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Option_Arms02_05",
+      "translation": [
+        0.11499977111816406,
+        6.729999542236328,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": null,
+        "stencil_read": null,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Option_Arms02_06",
+      "translation": [
+        0.21500015258789062,
+        6.840000152587891,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": null,
+        "stencil_read": null,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Arms",
+      "children": [
+        20,
+        21
+      ]
+    },
+    {
+      "name": "Arms01",
+      "translation": [
+        0.630000114440918,
+        2.4850006103515625,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": 1,
+        "stencil_read": null,
+        "cutoff": 0.20000000298023224,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Arms02",
+      "translation": [
+        0.7899999618530273,
+        1.1900005340576172,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": 1,
+        "stencil_read": null,
+        "cutoff": 0.20000000298023224,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "ArmR",
+      "children": [
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "name": "ArmR01",
+      "translation": [
+        4.050000190734863,
+        -0.31999969482421875,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": 1,
+        "stencil_read": null,
+        "cutoff": 0.20000000298023224,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": true
+      }
+    },
+    {
+      "name": "ArmR02",
+      "translation": [
+        5.394999980926514,
+        -0.8350009918212891,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": 1,
+        "stencil_read": null,
+        "cutoff": 0.20000000298023224,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "ArmR03",
+      "translation": [
+        2.130000114440918,
+        2.289999008178711,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": 1,
+        "stencil_read": null,
+        "cutoff": 0.20000000298023224,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "ArmR04",
+      "translation": [
+        1.3600006103515625,
+        3.6100006103515625,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": 1,
+        "stencil_read": null,
+        "cutoff": 0.20000000298023224,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "ArmR05",
+      "translation": [
+        1.880000114440918,
+        1.7250003814697266,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": 1,
+        "stencil_read": null,
+        "cutoff": 0.20000000298023224,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "ArmR06",
+      "translation": [
+        1.390000343322754,
+        4.545000076293945,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": 1,
+        "stencil_read": null,
+        "cutoff": 0.20000000298023224,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "ArmR07",
+      "translation": [
+        4.610000133514404,
+        0.7099990844726562,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": 1,
+        "stencil_read": null,
+        "cutoff": 0.20000000298023224,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Option_ArmR",
+      "children": [
+        31,
+        34,
+        37
+      ]
+    },
+    {
+      "name": "Option_ArmR01_01",
+      "children": [
+        32,
+        33
+      ]
+    },
+    {
+      "name": "Option_ArmR01_01_Front",
+      "translation": [
+        -0.034999847412109375,
+        2.674999237060547,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": 1,
+        "stencil_read": null,
+        "cutoff": 0.20000000298023224,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": true
+      }
+    },
+    {
+      "name": "Option_ArmR01_01_Back",
+      "translation": [
+        0.034999847412109375,
+        2.25,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "multiply",
+        "stencil_write": null,
+        "stencil_read": null,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": true
+      }
+    },
+    {
+      "name": "Option_ArmR01_02",
+      "children": [
+        35,
+        36
+      ]
+    },
+    {
+      "name": "Option_ArmR01_02_Front",
+      "translation": [
+        -4.079999923706055,
+        1.7350006103515625,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": 1,
+        "stencil_read": null,
+        "cutoff": 0.20000000298023224,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": true
+      }
+    },
+    {
+      "name": "Option_ArmR01_02_Back",
+      "translation": [
+        -0.28999996185302734,
+        -5.645000457763672,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "multiply",
+        "stencil_write": null,
+        "stencil_read": null,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": true
+      }
+    },
+    {
+      "name": "Option_ArmR02",
+      "children": [
+        38,
+        39
+      ]
+    },
+    {
+      "name": "Option_ArmR02_Front",
+      "translation": [
+        1.4800004959106445,
+        -0.12000083923339844,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": 1,
+        "stencil_read": null,
+        "cutoff": 0.20000000298023224,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Option_ArmR02_Back",
+      "translation": [
+        0.5349998474121094,
+        -0.21000099182128906,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "multiply",
+        "stencil_write": null,
+        "stencil_read": null,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "ArmL",
+      "children": [
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51
+      ]
+    },
+    {
+      "name": "ArmL01",
+      "translation": [
+        -4.914999008178711,
+        0.0,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": 1,
+        "stencil_read": null,
+        "cutoff": 0.20000000298023224,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": true
+      }
+    },
+    {
+      "name": "ArmL02",
+      "translation": [
+        -2.094999313354492,
+        -0.05999946594238281,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": 1,
+        "stencil_read": null,
+        "cutoff": 0.20000000298023224,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "ArmL03",
+      "translation": [
+        -4.659999847412109,
+        -0.7649993896484375,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": 1,
+        "stencil_read": null,
+        "cutoff": 0.20000000298023224,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "ArmL04",
+      "translation": [
+        -3.594999313354492,
+        3.1100006103515625,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": 1,
+        "stencil_read": null,
+        "cutoff": 0.20000000298023224,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "ArmL05",
+      "translation": [
+        -4.815000534057617,
+        0.8600006103515625,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": 1,
+        "stencil_read": null,
+        "cutoff": 0.20000000298023224,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "ArmL06",
+      "translation": [
+        -3.2150001525878906,
+        2.9449996948242188,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": 1,
+        "stencil_read": null,
+        "cutoff": 0.20000000298023224,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "ArmL07",
+      "translation": [
+        -2.6949996948242188,
+        4.225000381469727,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": 1,
+        "stencil_read": null,
+        "cutoff": 0.20000000298023224,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "ArmL08",
+      "translation": [
+        -4.904998779296875,
+        6.180000305175781,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": 1,
+        "stencil_read": null,
+        "cutoff": 0.20000000298023224,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "ArmL09",
+      "translation": [
+        -4.069999694824219,
+        2.559999465942383,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": 1,
+        "stencil_read": null,
+        "cutoff": 0.20000000298023224,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "ArmL10",
+      "translation": [
+        -3.940000534057617,
+        0.7099990844726562,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": 1,
+        "stencil_read": null,
+        "cutoff": 0.20000000298023224,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "ArmL11",
+      "translation": [
+        -3.5850000381469727,
+        2.914999008178711,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": 1,
+        "stencil_read": null,
+        "cutoff": 0.20000000298023224,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Head",
+      "children": [
+        53,
+        54,
+        55,
+        56,
+        97
+      ]
+    },
+    {
+      "name": "ClippingMask_Facial_Normal01",
+      "translation": [
+        0.13000011444091797,
+        12.639999389648438,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": null,
+        "stencil_read": 2,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": true
+      }
+    },
+    {
+      "name": "ClippingMask_Facial_Multiply",
+      "translation": [
+        0.11499977111816406,
+        12.59000015258789,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "multiply",
+        "stencil_write": null,
+        "stencil_read": 2,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": true
+      }
+    },
+    {
+      "name": "ClippingMask_Facial_Normal02",
+      "translation": [
+        0.25,
+        12.125,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": null,
+        "stencil_read": 2,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          0.5647059082984924
+        ],
+        "enabled": true
+      }
+    },
+    {
+      "name": "Facial",
+      "children": [
+        57,
+        59,
+        63,
+        83,
+        95
+      ]
+    },
+    {
+      "name": "Sweat",
+      "children": [
+        58
+      ]
+    },
+    {
+      "name": "Sweat01",
+      "translation": [
+        -0.7849998474121094,
+        11.170000076293945,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": null,
+        "stencil_read": null,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Pale",
+      "children": [
+        60,
+        61,
+        62
+      ]
+    },
+    {
+      "name": "Pale01_01",
+      "translation": [
+        -0.26999950408935547,
+        12.799999237060547,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "multiply",
+        "stencil_write": null,
+        "stencil_read": null,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          0.8078431487083435
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Pale01_02",
+      "translation": [
+        1.3350000381469727,
+        12.725000381469727,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "multiply",
+        "stencil_write": 2,
+        "stencil_read": null,
+        "cutoff": 0.05000000074505806,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          0.4313725531101227
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Pale02",
+      "translation": [
+        0.10500049591064453,
+        12.850000381469727,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "multiply",
+        "stencil_write": null,
+        "stencil_read": null,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Eyes",
+      "children": [
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82
+      ]
+    },
+    {
+      "name": "Eyes_Normal_Open01",
+      "translation": [
+        0.125,
+        12.725000381469727,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": 2,
+        "stencil_read": null,
+        "cutoff": 0.20000000298023224,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": true
+      }
+    },
+    {
+      "name": "Eyes_Normal_Open02",
+      "translation": [
+        0.125,
+        12.654998779296875,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": 2,
+        "stencil_read": null,
+        "cutoff": 0.20000000298023224,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Eyes_Normal_Closed",
+      "translation": [
+        0.13000011444091797,
+        12.59000015258789,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": 2,
+        "stencil_read": null,
+        "cutoff": 0.20000000298023224,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Eyes_Smile_Closed",
+      "translation": [
+        0.125,
+        12.644998550415039,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": 2,
+        "stencil_read": null,
+        "cutoff": 0.20000000298023224,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Eyes_Angry_Open01",
+      "translation": [
+        0.10000038146972656,
+        12.579999923706055,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": 2,
+        "stencil_read": null,
+        "cutoff": 0.20000000298023224,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Eyes_Angry_Open02",
+      "translation": [
+        0.125,
+        12.625,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": 2,
+        "stencil_read": null,
+        "cutoff": 0.20000000298023224,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Eyes_Angry_Closed",
+      "translation": [
+        0.13000011444091797,
+        12.529998779296875,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": 2,
+        "stencil_read": null,
+        "cutoff": 0.20000000298023224,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Eyes_Pensive_Open",
+      "translation": [
+        0.14500045776367188,
+        12.789999008178711,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": 2,
+        "stencil_read": null,
+        "cutoff": 0.20000000298023224,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Eyes_Cry_Open01",
+      "translation": [
+        0.19999980926513672,
+        12.264999389648438,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": 2,
+        "stencil_read": null,
+        "cutoff": 0.20000000298023224,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Eyes_Cry_Open02",
+      "translation": [
+        0.19999980926513672,
+        12.295000076293945,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": 2,
+        "stencil_read": null,
+        "cutoff": 0.20000000298023224,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Eyes_Surprised_Open",
+      "translation": [
+        0.18500041961669922,
+        12.779998779296875,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": 2,
+        "stencil_read": null,
+        "cutoff": 0.20000000298023224,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Eyes_Flushed_Open",
+      "translation": [
+        0.1400003433227539,
+        12.764999389648438,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": 2,
+        "stencil_read": null,
+        "cutoff": 0.20000000298023224,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Eyes_Fearful_Open",
+      "translation": [
+        0.0950002670288086,
+        12.864999771118164,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": 2,
+        "stencil_read": null,
+        "cutoff": 0.20000000298023224,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Eyes_Neutral_Open",
+      "translation": [
+        0.11999988555908203,
+        12.694999694824219,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": 2,
+        "stencil_read": null,
+        "cutoff": 0.20000000298023224,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Eyes_Uncomfortable_Open01",
+      "translation": [
+        0.125,
+        12.600000381469727,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": 2,
+        "stencil_read": null,
+        "cutoff": 0.20000000298023224,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Eyes_Uncomfortable_Open02",
+      "translation": [
+        0.125,
+        12.579999923706055,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": 2,
+        "stencil_read": null,
+        "cutoff": 0.20000000298023224,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Eyes_Sick_Open01",
+      "translation": [
+        0.13000011444091797,
+        12.625,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": 2,
+        "stencil_read": null,
+        "cutoff": 0.20000000298023224,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Eyes_Sick_Open02",
+      "translation": [
+        0.13000011444091797,
+        12.680000305175781,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": 2,
+        "stencil_read": null,
+        "cutoff": 0.20000000298023224,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Eyes_Downcast_Open",
+      "translation": [
+        0.125,
+        12.654998779296875,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": 2,
+        "stencil_read": null,
+        "cutoff": 0.20000000298023224,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Mouth",
+      "children": [
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94
+      ]
+    },
+    {
+      "name": "Mouth_Normal_Closed",
+      "translation": [
+        0.3299999237060547,
+        11.045000076293945,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": null,
+        "stencil_read": null,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": true
+      }
+    },
+    {
+      "name": "Mouth_Smile_Open",
+      "translation": [
+        0.2650003433227539,
+        11.204999923706055,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": null,
+        "stencil_read": null,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Mouth_Angry_Closed01",
+      "translation": [
+        0.2200002670288086,
+        11.100000381469727,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": null,
+        "stencil_read": null,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Mouth_Angry_Closed02",
+      "translation": [
+        0.25500011444091797,
+        11.129999160766602,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": null,
+        "stencil_read": null,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Mouth_Pensive_Open",
+      "translation": [
+        0.25,
+        11.145000457763672,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": null,
+        "stencil_read": null,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Mouth_Cry_Closed",
+      "translation": [
+        0.2700004577636719,
+        10.975000381469727,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": null,
+        "stencil_read": null,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Mouth_Surprised_Open",
+      "translation": [
+        0.2849998474121094,
+        11.09000015258789,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": null,
+        "stencil_read": null,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Mouth_Flushed_Closed",
+      "translation": [
+        0.22500038146972656,
+        11.174999237060547,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": null,
+        "stencil_read": null,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Mouth_Fearful_Open",
+      "translation": [
+        0.2849998474121094,
+        11.180000305175781,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": null,
+        "stencil_read": null,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Mouth_Uncomfortable_Open",
+      "translation": [
+        0.2200002670288086,
+        11.039999008178711,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": null,
+        "stencil_read": null,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Mouth_Yell_Open",
+      "translation": [
+        0.22500038146972656,
+        11.059999465942383,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": null,
+        "stencil_read": null,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Cheeks",
+      "children": [
+        96
+      ]
+    },
+    {
+      "name": "Cheeks_Flushed",
+      "translation": [
+        0.06000041961669922,
+        11.96500015258789,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": null,
+        "stencil_read": null,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "HeadBase",
+      "translation": [
+        -0.5950002670288086,
+        12.739999771118164,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": 1,
+        "stencil_read": null,
+        "cutoff": 0.20000000298023224,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": true
+      }
+    },
+    {
+      "name": "Effect_Back_Arms",
+      "children": [
+        99,
+        100
+      ]
+    },
+    {
+      "name": "Effect_Back_Arms01",
+      "translation": [
+        -0.8899993896484375,
+        -1.4750003814697266,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "multiply",
+        "stencil_write": null,
+        "stencil_read": null,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Effect_Back_Arms02",
+      "translation": [
+        -1.125,
+        -3.7849998474121094,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "multiply",
+        "stencil_write": null,
+        "stencil_read": null,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Effect_Back_ArmR",
+      "children": [
+        102,
+        103,
+        104,
+        105,
+        106
+      ]
+    },
+    {
+      "name": "Effect_Back_ArmR02",
+      "translation": [
+        4.570000171661377,
+        -2.9250001907348633,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "multiply",
+        "stencil_write": null,
+        "stencil_read": null,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Effect_Back_ArmR04",
+      "translation": [
+        1.015000343322754,
+        2.799999237060547,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "multiply",
+        "stencil_write": null,
+        "stencil_read": null,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Effect_Back_ArmR05",
+      "translation": [
+        1.8000001907348633,
+        -0.05000114440917969,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "multiply",
+        "stencil_write": null,
+        "stencil_read": null,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Effect_Back_ArmR06",
+      "translation": [
+        0.8400001525878906,
+        3.770000457763672,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "multiply",
+        "stencil_write": null,
+        "stencil_read": null,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Effect_Back_ArmR07",
+      "translation": [
+        3.7899999618530273,
+        -2.060000419616699,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "multiply",
+        "stencil_write": null,
+        "stencil_read": null,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Effect_Back_ArmL",
+      "children": [
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114
+      ]
+    },
+    {
+      "name": "Effect_Back_ArmL03",
+      "translation": [
+        -4.559999465942383,
+        -6.965000152587891,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "multiply",
+        "stencil_write": null,
+        "stencil_read": null,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Effect_Back_ArmL05",
+      "translation": [
+        -3.354999542236328,
+        0.2950000762939453,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "multiply",
+        "stencil_write": null,
+        "stencil_read": null,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Effect_Back_ArmL06",
+      "translation": [
+        -1.6399993896484375,
+        2.2549991607666016,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "multiply",
+        "stencil_write": null,
+        "stencil_read": null,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Effect_Back_ArmL07",
+      "translation": [
+        -1.119999885559082,
+        3.5349998474121094,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "multiply",
+        "stencil_write": null,
+        "stencil_read": null,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Effect_Back_ArmL08",
+      "translation": [
+        -3.2150001525878906,
+        4.934999465942383,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "multiply",
+        "stencil_write": null,
+        "stencil_read": null,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Effect_Back_ArmL10",
+      "translation": [
+        -3.119999885559082,
+        -2.060000419616699,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "multiply",
+        "stencil_write": null,
+        "stencil_read": null,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Effect_Back_ArmL11",
+      "translation": [
+        -0.8999996185302734,
+        1.8950004577636719,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "multiply",
+        "stencil_write": null,
+        "stencil_read": null,
+        "cutoff": 0.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": false
+      }
+    },
+    {
+      "name": "Body",
+      "translation": [
+        -0.0,
+        -0.2550010681152344,
+        0.0
+      ],
+      "sprite": {
+        "blend_mode": "normal",
+        "stencil_write": 1,
+        "stencil_read": null,
+        "cutoff": 0.20000000298023224,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": true
+      }
+    },
+    {
+      "name": "Camera",
+      "translation": [
+        -0.0,
+        0.0,
+        -10.0
+      ]
+    },
+    {
+      "name": "LayerModifier"
+    }
+  ]
+}

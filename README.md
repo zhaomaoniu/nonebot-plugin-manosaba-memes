@@ -9,7 +9,7 @@
 _✨ [NoneBot2](https://github.com/nonebot/nonebot2) 魔法少女的魔女审判表情包生成插件 ✨_
 
 <p align="center">
-  <img src="https://img.shields.io/github/license/MemeCrafters/nonebot-plugin-memes" alt="license">
+  <img src="https://img.shields.io/github/license/zhaomaoniu/nonebot-plugin-manosaba-memes" alt="license">
   <img src="https://img.shields.io/badge/python-3.10+-blue.svg" alt="Python">
   <img src="https://img.shields.io/badge/nonebot-2.4.4+-red.svg" alt="NoneBot">
 </p>
@@ -17,6 +17,10 @@ _✨ [NoneBot2](https://github.com/nonebot/nonebot2) 魔法少女的魔女审判
 </div>
 
 [#まのさばネタバレ](https://manosaba.com)（有剧透）
+
+**本项目使用的游戏素材未获官方使用许可，相关版权归原权利人所有；若有侵权，请联系删除。**
+
+**The game assets used in this project are not officially licensed. All rights belong to their respective owners. Please contact us for removal if this project infringes upon your rights.**
 
 ## 介绍
 
@@ -60,6 +64,37 @@ _✨ [NoneBot2](https://github.com/nonebot/nonebot2) 魔法少女的魔女审判
 1. 使用 `切换角色 [角色名]` 可以切换角色，角色与用户绑定。可选角色：梅露露, 诺亚, 汉娜, 奈叶香, 亚里沙, 米莉亚, 雪莉, 艾玛, 玛格, 安安, 可可, 希罗, 蕾雅
 2. 多行文本会被识别为多条选项。选项数量没有上限，但 3 条以内效果最佳
 3. 魔法选项中的角色为官方中文角色译名，即：梅露露, 诺亚, 汉娜, 奈叶香, 亚里沙, 米莉亚, 雪莉, 艾玛, 玛格, 安安, 可可, 希罗, 蕾雅
+
+### 立绘编辑器
+
+从游戏官方剧本中出现过的合法组合开始生成角色立绘。
+
+立绘所需的角色资源不会包含在 PyPI 安装包中。请在本项目对应版本的
+[GitHub Release](https://github.com/zhaomaoniu/nonebot-plugin-manosaba-memes/releases)
+下载 `manosaba-prefabs-<版本>.tar.gz`，并解压到 [nonebot-plugin-localstore](https://github.com/nonebot/plugin-localstore) 插件配置的数据
+目录。首次发送 `立绘 <角色名>` 时，如果资源尚未安装，机器人会返回当前环境的
+准确安装路径和下载地址；补装资源后直接重试即可，无需重装插件。
+
+压缩包包含顶层 `prefabs` 目录，正确安装后的结构如下：
+
+```text
+<localstore 插件 data 目录>/
+└── prefabs/
+    ├── AnAn/
+    │   ├── character.json
+    │   ├── composition.json
+    │   └── sprites/
+    └── ...
+```
+
+1. 发送 `立绘 梅露露`，机器人会先返回官方预设九宫格。
+2. 回复九宫格并发送 `P1`～`P9` 选择第一版。
+3. 回复结果图并发送 `头型`、`表情`、`眼睛`、`嘴巴`、`手臂`、`细节` 或 `配方` 继续调整；熟悉编号后也可以直接回复立绘发送 `H1`、`H2`、`M1` 等快速修改，不必先打开选择表。有备用头型的角色可用 `H` 编号切换，眼睛和嘴巴会同时利用官方组合中出现过的兼容底层素材，手臂选择表使用剧本中实际出现过的完整组合。
+4. 也可以使用图片下方显示的固定短码。例如梅露露 `P1` 的短码固定为 `#CFAMVMR9LZ`，可以发送 `#CFAMVMR9LZ 表情`；只发送该短码会直接生成立绘，并可回复图片继续编辑。
+
+选择表编号会跨页连续：第一页为 `1`～`9`，第二页为 `10`～`18`，依此类推。回复任意后续页时也可以直接选择前面页的编号，不必逐页翻回去。
+
+短码本身编码了角色、官方预设和全部覆盖项。资源不变时，相同组合始终得到相同短码；即使换机器或清空本地记录也能恢复。每张结果图本身都是完整立绘；回复旧图即可从旧组合继续编辑，因此不需要额外的撤销或完成操作。回复上下文仍会在本机永久保存。
 
 ## 安装
 
@@ -112,3 +147,9 @@ _✨ [NoneBot2](https://github.com/nonebot/nonebot2) 魔法少女的魔女审判
 - 感谢 [TY_Ling](https://github.com/YoisakiKnd) 提出了写这个插件的想法（其实一开始是他开始写的不过被我抢过来了w）
 - 感谢 [Mythos_404](https://github.com/Mythos-404) 编写了高效又好用的绘图库 [sketchbook-py](https://pypi.org/project/sketchbook-py/)
 - 感谢 Acacia 制作了魔法少女ノ魔女裁判，第一个能让我玩到凌晨四点的游戏
+
+## 第三方字体
+
+本项目使用 Adobe 的 Source Han Sans SC 和 Source Han Serif SC 字体，
+字体依照 SIL Open Font License 1.1 分发。完整版权声明和许可证见
+[`nonebot_plugin_manosaba_memes/assets/fonts/NOTICE.md`](nonebot_plugin_manosaba_memes/assets/fonts/NOTICE.md)。

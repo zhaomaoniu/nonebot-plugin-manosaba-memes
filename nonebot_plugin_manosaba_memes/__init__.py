@@ -6,18 +6,26 @@ from nonebot.internal.adapter import Bot, Event
 from nonebot.plugin import PluginMetadata, inherit_supported_adapters
 
 require("nonebot_plugin_alconna")
+require("nonebot_plugin_localstore")
 
 from nonebot_plugin_alconna import (
     Alconna,
     Args,
     Arparma,
     CommandMeta,
+    OriginalUniMsg,
     UniMessage,
     on_alconna,
 )
 
 from .drawer import draw_anan, draw_trial
 from .models import Option
+from .sprite_editor.interaction import (
+    FOLLOWUP_RE,
+    SPRITE_HELP,
+    handle_sprite,
+    handle_sprite_followup,
+)
 from .utils import CHARACTER_NAMES, get_character, get_statement
 
 CHARACTER_NAMES_TEXT = ", ".join(CHARACTER_NAMES)
@@ -31,6 +39,9 @@ usage = f"""
 【疑问/反驳/伪证/赞同/魔法:[角色名]】这是一个选项文本
     角色名可选：{CHARACTER_NAMES_TEXT}
     可发送多行以添加多个选项
+立绘 [角色名]
+    从官方预设开始生成立绘，并通过回复消息精细调整
+    发送 立绘 -h 查看完整帮助
 """.strip()
 
 __plugin_meta__ = PluginMetadata(
@@ -73,6 +84,29 @@ switch_character_handler = on_alconna(
     ),
     use_cmd_start=True,
 )
+sprite_handler = on_alconna(
+    Alconna(
+        "立绘",
+        Args["character", str, None],
+        meta=CommandMeta(
+            description="从官方预设创建并精细调整角色立绘",
+            usage=SPRITE_HELP,
+            example=(
+                "立绘 梅露露\n"
+                "P1\n"
+                "#CFAMVMR9LZ\n"
+                "#CFAMVMR9LZ 眼睛"
+            ),
+        ),
+    ),
+    use_cmd_start=True,
+)
+sprite_followup_handler = on_regex(
+    FOLLOWUP_RE.pattern,
+    flags=re.IGNORECASE,
+    priority=12,
+    block=False,
+)
 
 
 @anan_says_handler.handle()
@@ -101,8 +135,7 @@ async def handle_trail(bot: Bot, event: Event):
         except KeyError:
             if arg:
                 await trail_handler.finish(
-                    f"角色 {arg} 无效，请从以下选项中选择："
-                    f"{CHARACTER_NAMES_TEXT}"
+                    f"角色 {arg} 无效，请从以下选项中选择：{CHARACTER_NAMES_TEXT}"
                 )
             else:
                 await trail_handler.finish(
@@ -130,3 +163,15 @@ async def handle_switch_character(evemt: Event, result: Arparma):
         await switch_character_handler.finish(
             f"角色名 {character_name} 无效，请选择：{CHARACTER_NAMES_TEXT}"
         )
+
+
+@sprite_handler.handle()
+async def handle_sprite_entry(bot: Bot, event: Event, result: Arparma) -> None:
+    await handle_sprite(bot, event, result)
+
+
+@sprite_followup_handler.handle()
+async def handle_sprite_followup_entry(
+    bot: Bot, event: Event, message: OriginalUniMsg
+) -> None:
+    await handle_sprite_followup(bot, event, message)

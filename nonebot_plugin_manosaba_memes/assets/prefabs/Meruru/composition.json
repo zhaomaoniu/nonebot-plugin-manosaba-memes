@@ -1,0 +1,581 @@
+{
+  "compositionMap": [
+    {
+      "Key": "ArmR1_1",
+      "Composition": "Angle01/Arms-,Angle01/OptionF>OptionF_Head01_ArmR01,Angle01/ArmR>ArmR01"
+    },
+    {
+      "Key": "ArmR2_1",
+      "Composition": "Angle01/Arms-,Angle01/OptionF>OptionF_Head01_ArmR02,Angle01/ArmR>ArmR02"
+    },
+    {
+      "Key": "ArmR3_1",
+      "Composition": "Angle01/Arms-,Angle01/OptionF>OptionF_Head01_ArmR03,Angle01/ArmR>ArmR03"
+    },
+    {
+      "Key": "ArmR4_1",
+      "Composition": "Angle01/Arms-,Angle01/OptionF>OptionF_Head01_ArmR04,Angle01/ArmR>ArmR04"
+    },
+    {
+      "Key": "ArmR5_1",
+      "Composition": "Angle01/Arms-,Angle01/OptionF>OptionF_Head01_ArmR05,Angle01/ArmR>ArmR05"
+    },
+    {
+      "Key": "ArmR6_1",
+      "Composition": "Angle01/Arms-,Angle01/OptionF>OptionF_Head01_ArmR06,Angle01/ArmR>ArmR06"
+    },
+    {
+      "Key": "ArmR7_1",
+      "Composition": "Angle01/Arms-,Angle01/OptionF>OptionF_Head01_ArmR07,Angle01/ArmR>ArmR07"
+    },
+    {
+      "Key": "ArmR8_1",
+      "Composition": "Angle01/Arms-,Angle01/OptionF>OptionF_Head01_ArmR08,Angle01/ArmR>ArmR08"
+    },
+    {
+      "Key": "ArmR9_1",
+      "Composition": "Angle01/Arms-,Angle01/OptionF>OptionF_Head01_ArmR09,Angle01/ArmR>ArmR09"
+    },
+    {
+      "Key": "ArmR10_1",
+      "Composition": "Angle01/Arms-,Angle01/OptionF>OptionF_Head01_ArmR10,Angle01/ArmR>ArmR10"
+    },
+    {
+      "Key": "ArmR11_1",
+      "Composition": "Angle01/Arms-,Angle01/OptionF>OptionF_Head01_ArmR11,Angle01/ArmR>ArmR11"
+    },
+    {
+      "Key": "ArmR12_1",
+      "Composition": "Angle01/Arms-,Angle01/OptionF>OptionF_Head01_ArmR12,Angle01/ArmR>ArmR12"
+    },
+    {
+      "Key": "ArmR13_1",
+      "Composition": "Angle01/Arms-,Angle01/OptionF>OptionF_Head01_ArmR13,Angle01/ArmR>ArmR13"
+    },
+    {
+      "Key": "ArmR1_2",
+      "Composition": "Angle01/Arms-,Angle01/OptionF-,Angle01/ArmR>ArmR01"
+    },
+    {
+      "Key": "ArmR2_2",
+      "Composition": "Angle01/Arms-,Angle01/OptionF-,Angle01/ArmR>ArmR02"
+    },
+    {
+      "Key": "ArmR3_2",
+      "Composition": "Angle01/Arms-,Angle01/OptionF-,Angle01/ArmR>ArmR03"
+    },
+    {
+      "Key": "ArmR4_2",
+      "Composition": "Angle01/Arms-,Angle01/OptionF-,Angle01/ArmR>ArmR04"
+    },
+    {
+      "Key": "ArmR5_2",
+      "Composition": "Angle01/Arms-,Angle01/OptionF-,Angle01/ArmR>ArmR05"
+    },
+    {
+      "Key": "ArmR6_2",
+      "Composition": "Angle01/Arms-,Angle01/OptionF-,Angle01/ArmR>ArmR06"
+    },
+    {
+      "Key": "ArmR7_2",
+      "Composition": "Angle01/Arms-,Angle01/OptionF-,Angle01/ArmR>ArmR07"
+    },
+    {
+      "Key": "ArmR8_2",
+      "Composition": "Angle01/Arms-,Angle01/OptionF-,Angle01/ArmR>ArmR08"
+    },
+    {
+      "Key": "ArmR9_2",
+      "Composition": "Angle01/Arms-,Angle01/OptionF-,Angle01/ArmR>ArmR09"
+    },
+    {
+      "Key": "ArmR10_2",
+      "Composition": "Angle01/Arms-,Angle01/OptionF-,Angle01/ArmR>ArmR10"
+    },
+    {
+      "Key": "ArmR11_2",
+      "Composition": "Angle01/Arms-,Angle01/OptionF-,Angle01/ArmR>ArmR11"
+    },
+    {
+      "Key": "ArmR12_2",
+      "Composition": "Angle01/Arms-,Angle01/OptionF-,Angle01/ArmR>ArmR12"
+    },
+    {
+      "Key": "ArmR13_2",
+      "Composition": "Angle01/Arms-,Angle01/OptionF-,Angle01/ArmR>ArmR13"
+    },
+    {
+      "Key": "ArmL1",
+      "Composition": "Angle01/Arms-,Angle01/ArmL>ArmL01"
+    },
+    {
+      "Key": "ArmL2",
+      "Composition": "Angle01/Arms-,Angle01/ArmL>ArmL02"
+    },
+    {
+      "Key": "ArmL3",
+      "Composition": "Angle01/Arms-,Angle01/ArmL>ArmL03"
+    },
+    {
+      "Key": "ArmL4",
+      "Composition": "Angle01/Arms-,Angle01/ArmL>ArmL04"
+    },
+    {
+      "Key": "ArmL5",
+      "Composition": "Angle01/Arms-,Angle01/ArmL>ArmL05"
+    },
+    {
+      "Key": "ArmL6",
+      "Composition": "Angle01/Arms-,Angle01/ArmL>ArmL06"
+    },
+    {
+      "Key": "ArmL7",
+      "Composition": "Angle01/Arms-,Angle01/ArmL>ArmL07"
+    },
+    {
+      "Key": "ArmL8",
+      "Composition": "Angle01/Arms-,Angle01/ArmL>ArmL08"
+    },
+    {
+      "Key": "ArmL9",
+      "Composition": "Angle01/Arms-,Angle01/ArmL>ArmL09"
+    },
+    {
+      "Key": "ArmL10",
+      "Composition": "Angle01/Arms-,Angle01/ArmL>ArmL10"
+    },
+    {
+      "Key": "ArmL11",
+      "Composition": "Angle01/Arms-,Angle01/ArmL>ArmL11"
+    },
+    {
+      "Key": "ArmL12",
+      "Composition": "Angle01/Arms-,Angle01/ArmL>ArmL12"
+    },
+    {
+      "Key": "ArmL13",
+      "Composition": "Angle01/Arms-,Angle01/ArmL>ArmL13"
+    },
+    {
+      "Key": "ArmL14",
+      "Composition": "Angle01/Arms-,Angle01/ArmL>ArmL14"
+    },
+    {
+      "Key": "ArmL15",
+      "Composition": "Angle01/Arms-,Angle01/ArmL>ArmL15"
+    },
+    {
+      "Key": "ArmL16",
+      "Composition": "Angle01/Arms-,Angle01/ArmL>ArmL16"
+    },
+    {
+      "Key": "Arms1_1",
+      "Composition": "Angle01/ArmR-,Angle01/ArmL-,Angle01/OptionF>OptionF_Head01_Arms01,Angle01/Arms>Arms01"
+    },
+    {
+      "Key": "Arms1_2",
+      "Composition": "Angle01/ArmR-,Angle01/ArmL-,Angle01/OptionF-,Angle01/Arms>Arms01"
+    },
+    {
+      "Key": "Head1",
+      "Composition": "Angle01/Head/Head02-,Angle01/Head/Head01+ClippingMask_Facial01_01,Angle01/Head/Head01+ClippingMask_Eyes01_01,Angle01/Head/Head01+HeadBase01"
+    },
+    {
+      "Key": "Head2",
+      "Composition": "Angle01/Head/Head01-,Angle01/Head/Head02+ClippingMask_Facial02_01,Angle01/Head/Head02+ClippingMask_Eyes02_01,Angle01/Head/Head02+HeadBase02"
+    },
+    {
+      "Key": "Pale1_1",
+      "Composition": "Angle01/Head/Head01/Pale01>Pale01_01"
+    },
+    {
+      "Key": "Pale1_Off",
+      "Composition": "Angle01/Head/Head01/Pale01-"
+    },
+    {
+      "Key": "Sweat1_1",
+      "Composition": "Angle01/Head/Head01/Sweat01>Sweat01_01"
+    },
+    {
+      "Key": "Sweat1_Off",
+      "Composition": "Angle01/Head/Head01/Sweat01-"
+    },
+    {
+      "Key": "Eyes1_Normal_Open1",
+      "Composition": "Angle01/Head/Head01/Eyes01>Eyes01_Normal_Open01"
+    },
+    {
+      "Key": "Eyes1_Normal_Open2",
+      "Composition": "Angle01/Head/Head01/Eyes01>Eyes01_Normal_Open02"
+    },
+    {
+      "Key": "Eyes1_Normal_Open3",
+      "Composition": "Angle01/Head/Head01/Eyes01>Eyes01_Normal_Open03"
+    },
+    {
+      "Key": "Eyes1_Smile_Closed1",
+      "Composition": "Angle01/Head/Head01/Eyes01>Eyes01_Smile_Closed01"
+    },
+    {
+      "Key": "Eyes1_Angry_Open1",
+      "Composition": "Angle01/Head/Head01/Eyes01>Eyes01_Angry_Open01"
+    },
+    {
+      "Key": "Eyes1_Angry_Closed1",
+      "Composition": "Angle01/Head/Head01/Eyes01>Eyes01_Angry_Closed01"
+    },
+    {
+      "Key": "Eyes1_Pensive_Open1",
+      "Composition": "Angle01/Head/Head01/Eyes01>Eyes01_Pensive_Open01"
+    },
+    {
+      "Key": "Eyes1_Pensive_Open2",
+      "Composition": "Angle01/Head/Head01/Eyes01>Eyes01_Pensive_Open02"
+    },
+    {
+      "Key": "Eyes1_Cry_Closed1",
+      "Composition": "Angle01/Head/Head01/Eyes01>Eyes01_Cry_Closed01"
+    },
+    {
+      "Key": "Eyes1_Cry_Closed2",
+      "Composition": "Angle01/Head/Head01/Eyes01>Eyes01_Cry_Closed02"
+    },
+    {
+      "Key": "Eyes1_Cry_Closed3",
+      "Composition": "Angle01/Head/Head01/Eyes01>Eyes01_Cry_Closed03"
+    },
+    {
+      "Key": "Eyes1_Surprised_Open1",
+      "Composition": "Angle01/Head/Head01/Eyes01>Eyes01_Surprised_Open01"
+    },
+    {
+      "Key": "Eyes1_Flushed_Closed1",
+      "Composition": "Angle01/Head/Head01/Eyes01>Eyes01_Flushed_Closed01"
+    },
+    {
+      "Key": "Eyes1_Fearful_Open1",
+      "Composition": "Angle01/Head/Head01/Eyes01>Eyes01_Fearful_Open01"
+    },
+    {
+      "Key": "Eyes1_Downcast_Open1",
+      "Composition": "Angle01/Head/Head01/Eyes01>Eyes01_Downcast_Open01"
+    },
+    {
+      "Key": "Eyes1_Uncomfortable_Open1",
+      "Composition": "Angle01/Head/Head01/Eyes01>Eyes01_Uncomfortable_Open01"
+    },
+    {
+      "Key": "Mouth1_Normal_Open1",
+      "Composition": "Angle01/Head/Head01/Mouth01>Mouth01_Normal_Open01"
+    },
+    {
+      "Key": "Mouth1_Normal_Open2",
+      "Composition": "Angle01/Head/Head01/Mouth01>Mouth01_Normal_Open02"
+    },
+    {
+      "Key": "Mouth1_Normal_Open3",
+      "Composition": "Angle01/Head/Head01/Mouth01>Mouth01_Normal_Open03"
+    },
+    {
+      "Key": "Mouth1_Normal_Closed1",
+      "Composition": "Angle01/Head/Head01/Mouth01>Mouth01_Normal_Closed01"
+    },
+    {
+      "Key": "Mouth1_Smile_Closed1",
+      "Composition": "Angle01/Head/Head01/Mouth01>Mouth01_Smile_Closed01"
+    },
+    {
+      "Key": "Mouth1_Angry_Open1",
+      "Composition": "Angle01/Head/Head01/Mouth01>Mouth01_Angry_Open01"
+    },
+    {
+      "Key": "Mouth1_Angry_Open2",
+      "Composition": "Angle01/Head/Head01/Mouth01>Mouth01_Angry_Open02"
+    },
+    {
+      "Key": "Mouth1_Angry_Closed1",
+      "Composition": "Angle01/Head/Head01/Mouth01>Mouth01_Angry_Closed01"
+    },
+    {
+      "Key": "Mouth1_Pensive_Closed1",
+      "Composition": "Angle01/Head/Head01/Mouth01>Mouth01_Pensive_Closed01"
+    },
+    {
+      "Key": "Mouth1_Cry_Open1",
+      "Composition": "Angle01/Head/Head01/Mouth01>Mouth01_Cry_Open01"
+    },
+    {
+      "Key": "Mouth1_Surprised_Open1",
+      "Composition": "Angle01/Head/Head01/Mouth01>Mouth01_Surprised_Open01"
+    },
+    {
+      "Key": "Mouth1_Surprised_Open2",
+      "Composition": "Angle01/Head/Head01/Mouth01>Mouth01_Surprised_Open02"
+    },
+    {
+      "Key": "Mouth1_Flushed_Closed1",
+      "Composition": "Angle01/Head/Head01/Mouth01>Mouth01_Flushed_Closed01"
+    },
+    {
+      "Key": "Mouth1_Fearful_Open1",
+      "Composition": "Angle01/Head/Head01/Mouth01>Mouth01_Fearful_Open01"
+    },
+    {
+      "Key": "Cheeks1_Normal",
+      "Composition": "Angle01/Head/Head01/Cheeks01>Cheeks01_Normal"
+    },
+    {
+      "Key": "Cheeks1_Flushed",
+      "Composition": "Angle01/Head/Head01/Cheeks01>Cheeks01_Flushed"
+    },
+    {
+      "Key": "Cheeks1_Off",
+      "Composition": "Angle01/Head/Head01/Cheeks01-"
+    },
+    {
+      "Key": "Pale2_1",
+      "Composition": "Angle01/Head/Head02/Pale02>Pale02_01"
+    },
+    {
+      "Key": "Pale2_Off",
+      "Composition": "Angle01/Head/Head02/Pale02-"
+    },
+    {
+      "Key": "Sweat2_1",
+      "Composition": "Angle01/Head/Head02/Sweat02>Sweat02_01"
+    },
+    {
+      "Key": "Sweat2_Off",
+      "Composition": "Angle01/Head/Head02/Sweat02-"
+    },
+    {
+      "Key": "Eyes2_Normal_Open1",
+      "Composition": "Angle01/Head/Head02/Eyes02>Eyes02_Normal_Open01"
+    },
+    {
+      "Key": "Eyes2_Normal_Open2",
+      "Composition": "Angle01/Head/Head02/Eyes02>Eyes02_Normal_Open02"
+    },
+    {
+      "Key": "Eyes2_Normal_Open3",
+      "Composition": "Angle01/Head/Head02/Eyes02>Eyes02_Normal_Open03"
+    },
+    {
+      "Key": "Eyes2_Smile_Closed1",
+      "Composition": "Angle01/Head/Head02/Eyes02>Eyes02_Smile_Closed01"
+    },
+    {
+      "Key": "Eyes2_Angry_Open1",
+      "Composition": "Angle01/Head/Head02/Eyes02>Eyes02_Angry_Open01"
+    },
+    {
+      "Key": "Eyes2_Angry_Closed1",
+      "Composition": "Angle01/Head/Head02/Eyes02>Eyes02_Angry_Closed01"
+    },
+    {
+      "Key": "Eyes2_Pensive_Open1",
+      "Composition": "Angle01/Head/Head02/Eyes02>Eyes02_Pensive_Open01"
+    },
+    {
+      "Key": "Eyes2_Pensive_Open2",
+      "Composition": "Angle01/Head/Head02/Eyes02>Eyes02_Pensive_Open02"
+    },
+    {
+      "Key": "Eyes2_Cry_Closed1",
+      "Composition": "Angle01/Head/Head02/Eyes02>Eyes02_Cry_Closed01"
+    },
+    {
+      "Key": "Eyes2_Cry_Closed2",
+      "Composition": "Angle01/Head/Head02/Eyes02>Eyes02_Cry_Closed02"
+    },
+    {
+      "Key": "Eyes2_Cry_Closed3",
+      "Composition": "Angle01/Head/Head02/Eyes02>Eyes02_Cry_Closed03"
+    },
+    {
+      "Key": "Eyes2_Surprised_Open1",
+      "Composition": "Angle01/Head/Head02/Eyes02>Eyes02_Surprised_Open01"
+    },
+    {
+      "Key": "Eyes2_Flushed_Closed1",
+      "Composition": "Angle01/Head/Head02/Eyes02>Eyes02_Flushed_Closed01"
+    },
+    {
+      "Key": "Eyes2_Fearful_Open1",
+      "Composition": "Angle01/Head/Head02/Eyes02>Eyes02_Fearful_Open01"
+    },
+    {
+      "Key": "Eyes2_Downcast_Open1",
+      "Composition": "Angle01/Head/Head02/Eyes02>Eyes02_Downcast_Open01"
+    },
+    {
+      "Key": "Eyes2_Uncomfortable_Open1",
+      "Composition": "Angle01/Head/Head02/Eyes02>Eyes02_Uncomfortable_Open01"
+    },
+    {
+      "Key": "Mouth2_Normal_Open1",
+      "Composition": "Angle01/Head/Head02/Mouth02>Mouth02_Normal_Open01"
+    },
+    {
+      "Key": "Mouth2_Normal_Open2",
+      "Composition": "Angle01/Head/Head02/Mouth02>Mouth02_Normal_Open02"
+    },
+    {
+      "Key": "Mouth2_Normal_Open3",
+      "Composition": "Angle01/Head/Head02/Mouth02>Mouth02_Normal_Open03"
+    },
+    {
+      "Key": "Mouth2_Normal_Closed1",
+      "Composition": "Angle01/Head/Head02/Mouth02>Mouth02_Normal_Closed01"
+    },
+    {
+      "Key": "Mouth2_Smile_Closed1",
+      "Composition": "Angle01/Head/Head02/Mouth02>Mouth02_Smile_Closed01"
+    },
+    {
+      "Key": "Mouth2_Angry_Open1",
+      "Composition": "Angle01/Head/Head02/Mouth02>Mouth02_Angry_Open01"
+    },
+    {
+      "Key": "Mouth2_Angry_Open2",
+      "Composition": "Angle01/Head/Head02/Mouth02>Mouth02_Angry_Open02"
+    },
+    {
+      "Key": "Mouth2_Angry_Closed1",
+      "Composition": "Angle01/Head/Head02/Mouth02>Mouth02_Angry_Closed01"
+    },
+    {
+      "Key": "Mouth2_Pensive_Closed1",
+      "Composition": "Angle01/Head/Head02/Mouth02>Mouth02_Pensive_Closed01"
+    },
+    {
+      "Key": "Mouth2_Cry_Open1",
+      "Composition": "Angle01/Head/Head02/Mouth02>Mouth02_Cry_Open01"
+    },
+    {
+      "Key": "Mouth2_Surprised_Open1",
+      "Composition": "Angle01/Head/Head02/Mouth02>Mouth02_Surprised_Open01"
+    },
+    {
+      "Key": "Mouth2_Surprised_Open2",
+      "Composition": "Angle01/Head/Head02/Mouth02>Mouth02_Surprised_Open02"
+    },
+    {
+      "Key": "Mouth2_Flushed_Closed1",
+      "Composition": "Angle01/Head/Head02/Mouth02>Mouth02_Flushed_Closed01"
+    },
+    {
+      "Key": "Mouth2_Fearful_Open1",
+      "Composition": "Angle01/Head/Head02/Mouth02>Mouth02_Fearful_Open01"
+    },
+    {
+      "Key": "Cheeks2_Normal",
+      "Composition": "Angle01/Head/Head02/Cheeks02>Cheeks02_Normal"
+    },
+    {
+      "Key": "Cheeks2_Flushed",
+      "Composition": "Angle01/Head/Head02/Cheeks02>Cheeks02_Flushed"
+    },
+    {
+      "Key": "Cheeks2_Off",
+      "Composition": "Angle01/Head/Head02/Cheeks02-"
+    },
+    {
+      "Key": "Normal1",
+      "Composition": "Head1,Eyes1_Normal_Open1,Mouth1_Normal_Open1,Pale1_Off,Sweat1_Off,Cheeks1_Normal"
+    },
+    {
+      "Key": "Smile1",
+      "Composition": "Head1,Eyes1_Normal_Open3,Mouth1_Smile_Closed1,Pale1_Off,Sweat1_Off,Cheeks1_Normal"
+    },
+    {
+      "Key": "Angry1",
+      "Composition": "Head1,Eyes1_Angry_Open1,Mouth1_Angry_Closed1,Pale1_Off,Sweat1_Off,Cheeks1_Normal"
+    },
+    {
+      "Key": "Pensive1",
+      "Composition": "Head1,Eyes1_Pensive_Open1,Mouth1_Normal_Open1,Pale1_Off,Sweat1_Off,Cheeks1_Normal"
+    },
+    {
+      "Key": "Cry1",
+      "Composition": "Head1,Eyes1_Cry_Closed1,Mouth1_Normal_Open1,Pale1_Off,Sweat1_Off,Cheeks1_Normal"
+    },
+    {
+      "Key": "Surprised1",
+      "Composition": "Head1,Eyes1_Surprised_Open1,Mouth1_Surprised_Open1,Pale1_Off,Sweat1_1,Cheeks1_Normal"
+    },
+    {
+      "Key": "Flushed1",
+      "Composition": "Head1,Eyes1_Flushed_Closed1,Mouth1_Flushed_Closed1,Pale1_Off,Sweat1_Off,Cheeks1_Flushed"
+    },
+    {
+      "Key": "Fearful1",
+      "Composition": "Head1,Eyes1_Fearful_Open1,Mouth1_Fearful_Open1,Pale1_1,Sweat1_Off,Cheeks1_Normal"
+    },
+    {
+      "Key": "Normal2",
+      "Composition": "Head2,Eyes2_Normal_Open1,Mouth2_Normal_Open1,Pale2_Off,Sweat2_Off,Cheeks2_Normal"
+    },
+    {
+      "Key": "Smile2",
+      "Composition": "Head2,Eyes2_Normal_Open3,Mouth2_Smile_Closed1,Pale2_Off,Sweat2_Off,Cheeks2_Normal"
+    },
+    {
+      "Key": "Angry2",
+      "Composition": "Head2,Eyes2_Angry_Open1,Mouth2_Angry_Closed1,Pale2_Off,Sweat2_Off,Cheeks2_Normal"
+    },
+    {
+      "Key": "Pensive2",
+      "Composition": "Head2,Eyes2_Pensive_Open1,Mouth2_Normal_Open1,Pale2_Off,Sweat2_Off,Cheeks2_Normal"
+    },
+    {
+      "Key": "Cry2",
+      "Composition": "Head2,Eyes2_Cry_Closed1,Mouth2_Normal_Open1,Pale2_Off,Sweat2_Off,Cheeks2_Normal"
+    },
+    {
+      "Key": "Surprised2",
+      "Composition": "Head2,Eyes2_Surprised_Open1,Mouth2_Surprised_Open1,Pale2_Off,Sweat2_1,Cheeks2_Normal"
+    },
+    {
+      "Key": "Flushed2",
+      "Composition": "Head2,Eyes2_Flushed_Closed1,Mouth2_Flushed_Closed1,Pale2_Off,Sweat2_Off,Cheeks2_Flushed"
+    },
+    {
+      "Key": "Fearful2",
+      "Composition": "Head2,Eyes2_Fearful_Open1,Mouth2_Fearful_Open1,Pale2_1,Sweat2_Off,Cheeks2_Normal"
+    },
+    {
+      "Key": "Default",
+      "Composition": "Normal1"
+    },
+    {
+      "Key": "Smile",
+      "Composition": "Smile1"
+    },
+    {
+      "Key": "Angry",
+      "Composition": "Angry1"
+    },
+    {
+      "Key": "Pensive",
+      "Composition": "Pensive1"
+    },
+    {
+      "Key": "Cry",
+      "Composition": "Cry1"
+    },
+    {
+      "Key": "Surprised",
+      "Composition": "Surprised1"
+    },
+    {
+      "Key": "Flushed",
+      "Composition": "Flushed1"
+    },
+    {
+      "Key": "Fearful",
+      "Composition": "Fearful1"
+    }
+  ],
+  "defaultAppearance": "ArmR1_1,ArmL1,Normal1"
+}
