@@ -36,6 +36,15 @@ def get_anan_base_image(face: str | None = None) -> str:
     if face is None:
         return str(PLUGIN_PATH / "assets/anan/base.png")
     else:
+        available_faces = [
+            p.stem
+            for p in Path(PLUGIN_PATH / "assets/anan").glob("*.png")
+            if not p.stem.startswith("base")
+        ]
+        if face not in available_faces:
+            raise ValueError(
+                f"Invalid face: {face}. Available faces: {available_faces}"
+            )
         return str(PLUGIN_PATH / f"assets/anan/{face}.png")
 
 

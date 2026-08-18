@@ -1,5 +1,6 @@
 import re
 from collections import defaultdict
+from pathlib import Path
 
 from nonebot import on_regex, require
 from nonebot.internal.adapter import Bot, Event
@@ -91,12 +92,7 @@ sprite_handler = on_alconna(
         meta=CommandMeta(
             description="从官方预设创建并精细调整角色立绘",
             usage=SPRITE_HELP,
-            example=(
-                "立绘 梅露露\n"
-                "P1\n"
-                "#CFAMVMR9LZ\n"
-                "#CFAMVMR9LZ 眼睛"
-            ),
+            example=("立绘 梅露露\nP1\n#CFAMVMR9LZ\n#CFAMVMR9LZ 眼睛"),
         ),
     ),
     use_cmd_start=True,
@@ -114,7 +110,17 @@ async def handle_anan_says(result: Arparma):
     user_result = result["text"]
     face = result["face"]
     text = user_result.replace("\\n", "\n")
-    image_bytes = draw_anan(text, face)
+    try:
+        image_bytes = draw_anan(text, face)
+    except ValueError:
+        available_faces = [
+            p.stem
+            for p in (Path(__file__).parent / "assets/anan").glob("*.png")
+            if not p.stem.startswith("base")
+        ]
+        await anan_says_handler.finish(
+            f"表情 {face} 无效，请从以下选项中选择：{', '.join(available_faces)}"
+        )
     await anan_says_handler.finish(
         UniMessage.image(raw=image_bytes, mimetype="image/png")
     )
